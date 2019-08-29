@@ -52,12 +52,34 @@ function futeira(){
      echo "Argument $i e: " . $arg_list[$i] . "<br />\n";
      }
  } 
-/*livro
-function n_argumentos(){
-    $argumentos = func_get_args();
-    $quantidade = func_num_args();
-    for($n = 0; $n<$quantidade; $n+=1){
-        echo "Ola".$argumento[$n]."<br>\n";
-    }
-}*/
+
+ //substr separa sting
+function res(){
+    $res =  substr("AMERICA",1);
+    echo $res."</br>";
+    $res =  substr("AMERICA",1,4);
+    echo $res."</br>";
+    $res =  substr("AMERICA",-2);
+    echo $res."</br>";
+
+}
+
+function best(){
+    $text = "THE BEST";
+    print str_pad($text,20)."\n";//concatena string
+    echo "</br>";
+    print str_pad($text,20,"*",STR_PAD_LEFT)."\n";
+    echo "</br>";
+    print str_pad($text,20,"*",STR_PAD_BOTH)."\n";
+    echo "</br>";
+    print str_pad($text,20,"*")."\n";
+    echo "</br>";
+    print strlen($text); //comprimento da string
+    echo "</br>";
+    print str_replace('BEST', 'BAD', $text)."\n"; //substitui string 
+    echo "</br>";
+}
+
+
+
 ?>

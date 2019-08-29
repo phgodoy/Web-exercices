@@ -12,5 +12,7 @@ echo 'Foreach: ';
 echo futeira();
 echo "</br>";
 foo (1, 2, 3, 4);
+res();
+best();
 //n_argumentos('pedro','joao');
 ?>

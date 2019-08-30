@@ -80,6 +80,28 @@ function best(){
     echo "</br>";
 }
 
+function maca(){
+    $fruta['cor'] = 'vermelha';
+    $fruta['sabor'] = 'doce';
+    $fruta['formato'] = 'redonda';
+    $fruta['nome'] = 'maçã';
+    foreach($fruta as $tipe => $fruta)
+    {
+        echo "$tipe => $fruta / \n";
+    }
+}
+
+function multa(){
+    $minha_multa['carro'] =   'Palio';
+    $minha_multa['valor'] = 178.00;
+
+    $minha_multa['carro'] =   'ed-x';
+    $minha_multa['valor'] +=   200;
+
+    var_dump($minha_multa);
+
+}
+
 
 
 ?>

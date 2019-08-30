@@ -14,5 +14,7 @@ echo "</br>";
 foo (1, 2, 3, 4);
 res();
 best();
+maca();
+multa();
 //n_argumentos('pedro','joao');
 ?>

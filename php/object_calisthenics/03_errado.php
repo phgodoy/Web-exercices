@@ -3,12 +3,9 @@
 class funcionario{
     var $codigo;
     var $nome;
-    var $altura;
-    var $pesso;
-    var $idade;
-    var $nacimento;
-    var $escolaridade;
     var $salario;
+    var $nacimento;
+
 
 
     public function __construct(string  $nome, string $nacimento){

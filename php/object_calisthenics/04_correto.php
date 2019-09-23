@@ -4,11 +4,10 @@ class funcionario{
     var $codigo;
     var $nome;
     var $salario;
-    var $nacimento;
     
-    public function __construct(FuncionarioNome   $nome, FuncionarioNacimento  $nacimento, FuncionarioCodigo $codigo ){
+    public function __construct(FuncionarioNome   $nome, FuncionarioCodigo $codigo ){
         $this->nome = $nome;
-        $this->nacimento = $nacimento;
+        $this->codigo = $codigo;
     }
 
     public function registrado($registro){
@@ -33,11 +32,12 @@ $pedro = new funcionario(
     new FuncionarioCodigo ("829122")
 );
 
-foreach ($pedro as $pedro) {
-    if ($pedro->registro("829122")) {
-        $pedro->salario(800);
-    }
-}
+
+    $pedro->registro("829122");
+
+    $pedro->salario(800);
+    
+
 
 
 

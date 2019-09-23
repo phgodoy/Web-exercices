@@ -1,16 +1,14 @@
 <?php
-# 4 envolver collections em class
+#  5 uma chamada por metodo
 class funcionario{
     var $codigo;
     var $nome;
     var $salario;
-    var $nacimento;
     
-    public function __construct(FuncionarioNome   $nome, FuncionarioNacimento  $nacimento, FuncionarioCodigo $codigo ){
+    public function __construct(FuncionarioNome   $nome, FuncionarioCodigo $codigo ){
         $this->nome = $nome;
-        $this->nacimento = $nacimento;
+        $this->codigo = $codigo;
     }
-
     public function registrado($registro){
         if($this->codigo == $registro)
             echo "esta na empresa";
@@ -27,19 +25,15 @@ class funcionario{
 
 }
 
-$pedro = new funcionario(
+$funcionario = new funcionario(
     new FuncionarioNome('Pedro'),
     new FuncionarioNacimento('2000-05-05'),
     new FuncionarioCodigo ("829122")
 );
 
-foreach ($pedro as $pedro) {
-    if ($pedro->registro("829122")) {
-        $pedro->salario(800);
-    }
-}
 
+    $pedro = $funcionario->registro("829122");
 
+    $colaborador = $pedro->salario(800);
+    
 
-
-?>

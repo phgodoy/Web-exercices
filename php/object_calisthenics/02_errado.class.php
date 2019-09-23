@@ -1,6 +1,6 @@
 <?php
-# 2  nao use else
-class pessoa{
+#nao use else
+class funcionario{
     var $codigo;
     var $nome;
     var $altura;
@@ -13,11 +13,9 @@ class pessoa{
     public function aptidao(){
         if($peso <=50 || $pesso>100  )
             echo"pessoa nao apta";
-        
-        echo"pesssoa apta";
-            
+        else{
+            echo"pesssoa apta";
+        }    
     }
-
-
 }
 ?>
